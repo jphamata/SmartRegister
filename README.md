@@ -35,11 +35,8 @@ O SmartRegister é composto por três camadas principais:
 3. **Inicie a Ganache CLI:**  Abra um novo terminal e execute `ganache-cli`. Anote as 10 contas e a chave privada fornecidas.
 4. **Deploy do Contrato:** Em um novo terminal, navegue até a pasta raiz do projeto e execute:  `npx hardhat run scripts/deploy.js --network ganache`
     * **Copie o endereço do contrato** que será exibido no terminal.
-5. **Configure o Backend:**
-    * Crie um arquivo `.env` na pasta `server` e adicione a seguinte linha, substituindo `SEU_ENDERECO_DE_CONTRATO` pelo endereço copiado no passo anterior:
-        ```
-        CONTRACT_ADDRESS=SEU_ENDERECO_DE_CONTRATO
-        ```
+5. **Configure o endereço:**
+    * Cole o endereço copiado em App.jsx.
 6. **Inicie o Backend:** Em um novo terminal, navegue até a pasta `server` e execute: `node server.js`
 7. **Inicie o Frontend:** Em um novo terminal, navegue até a pasta `client` e execute: `npm start`
 8. **Configure o Metamask:**
