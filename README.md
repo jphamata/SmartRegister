@@ -30,15 +30,15 @@ O SmartRegister é composto por três camadas principais:
 
 1. **Clone o repositório:** `git clone https://github.com/jphamata/SmartRegister.git`
 2. **Instale as dependências:**
-    * Frontend: `cd client && npm install`
-    * Backend: `cd server && npm install`
+    * Frontend: `cd frontend && npm install`
+    * Backend: `cd backend && npm install`
 3. **Inicie a Ganache CLI:**  Abra um novo terminal e execute `ganache-cli`. Anote as 10 contas e a chave privada fornecidas.
 4. **Deploy do Contrato:** Em um novo terminal, navegue até a pasta raiz do projeto e execute:  `npx hardhat run scripts/deploy.js --network ganache`
     * **Copie o endereço do contrato** que será exibido no terminal.
 5. **Configure o endereço:**
     * Cole o endereço copiado em App.jsx.
-6. **Inicie o Backend:** Em um novo terminal, navegue até a pasta `server` e execute: `node server.js`
-7. **Inicie o Frontend:** Em um novo terminal, navegue até a pasta `client` e execute: `npm start`
+6. **Inicie o Backend:** Em um novo terminal, navegue até a pasta `backend` e execute: `node server.js`
+7. **Inicie o Frontend:** Em um novo terminal, navegue até a pasta `frontend` e execute: `npm start`
 8. **Configure o Metamask:**
     * Adicione a rede Ganache manualmente ao Metamask. Use a URL `http://127.0.0.1:8545` (ou a porta que a Ganache estiver usando).
     * Importe uma das contas fornecidas pela Ganache CLI para o Metamask usando a chave privada correspondente.
